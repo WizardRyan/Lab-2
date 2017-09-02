@@ -3,7 +3,6 @@
 <head>
     <title>Welcome to Joe's Coffee Store!</title>
     <link rel="stylesheet" href="Styles/Layout.css" type="text/css" />
-    <script defer src="scripts/myScript.js"></script>
 </head>
 <body>
 <header>
@@ -14,6 +13,7 @@
         <span id="headername">Joe's Coffee Store</span>
         <input type="search" class="searchbox" placeholder="Search our store" />
     </div>
+
     <nav class="backgroundgradient">
         <ul>
             <li><a class="navlink" href="index.html">Home</a></li>
@@ -63,7 +63,7 @@
                 <span class="productarticlename"><a href="coffeedetails.html">Coffee 1</a></span>
             </header>
             <p class="productarticleprice">€10</p>
-            <div class="addtocartbutton">
+            <div class="addtocartbutton" id="testButton">
                 Add to Cart
             </div>
 
@@ -100,7 +100,7 @@
                 <span class="productarticlename">Coffee 3</span>
             </header>
             <p class="productarticleprice">€10</p>
-            <div class="addtocartbutton" id="myAddToCartButton">
+            <div class="addtocartbutton">
                 Add to Cart
             </div>
         </article>
@@ -156,5 +156,7 @@
     <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.joescoffeestore.com">Joe's Coffee Store</a></p>
     <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
 </footer>
+
+<script src="scripts/testscript.js"></script>
 </body>
 </html>
