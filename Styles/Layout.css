@@ -96,7 +96,8 @@ nav ul li {
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
-
+    -webkit-column-count: 2;
+    column-count: 2;
 }
 
 #welcometext > header {
