@@ -4,6 +4,7 @@
     <title>Welcome to Joe's Coffee Store!</title>
     <link rel="stylesheet" href="Styles/Layout.css" type="text/css" />
     <script src="scripts/videoplayer.js"></script>
+    <script src="scripts/canvasChart.js"></script>
 </head>
 <body>
 <header>
@@ -50,7 +51,7 @@
     </div>
 
     <div>
-        <video width="320" height="240" class="coffeevideoplayer" id="videoplayer" poster="Images/logo.png">
+        <video width="320" height="240" class="coffeevideoplayer" id="videoplayer" poster="Images/logo.png" autoplay="autoplay">
             <source src="video/movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
             <source src="video/movie.ogg" type='video/ogg; codecs="theora, vorbis"' />
             Sadly your browser has no support for video…
@@ -69,8 +70,15 @@
     </div>
 </section>
 
+<div id="salesCanvasGraph">
+    <canvas id="barChart" height="800" width="750">
+        Sorry, your browser doesn't support canvas, therefore you can't see this chart! Upgrade to a new and better browser!
+    </canvas>
+</div>
+
 <script>
     document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);
+    document.addEventListener("DOMContentLoaded", drawChart, false);
 </script>
 
 </body>
